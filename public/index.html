@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./../src/css/style.css" />
+    <link rel="stylesheet" href="./../fontawesome/css/all.css" />
+  </head>
+  <body class="dark:bg-slate-900">
+    <header
+      class="fixed top-0 left-0 w-full bg-transparent flex items-center z-20"
+    >
+      <div class="container">
+        <div
+          class="container flex items-center justify-between w-full h-12 relative lg:h-16"
+        >
+          <div class="logo pl-6 lg:pl-16">
+            <a
+              href="#"
+              class="text-lg font-semibold text-emerald-700 lg:text-xl"
+              ><span class="text-slate-800 dark:text-slate-200">juli</span
+              >astawa</a
+            >
+          </div>
+          <div class="navbar pr-6">
+            <button id="hamburger-toggle" class="flex flex-col lg:hidden">
+              <span
+                class="line origin-top-left -translate-y-[2px] transition-all ease-in-out duration-300"
+              ></span>
+              <span
+                class="line -translate-y-[1px] transition-all ease-in-out duration-300"
+              ></span>
+              <span
+                class="line origin-bottom-left transition-all ease-in-out duration-300"
+              ></span>
+            </button>
+            <div
+              id="nav-menu"
+              class="scale-0 bg-white origin-top-right transition-all ease-in-out duration-300 container shadow-lg w-[200px] p-4 absolute z-[999] right-5 lg:scale-100 lg:w-[65%] lg:top-0 lg:shadow-none lg:bg-transparent dark:bg-slate-900 dark:lg:bg-transparent"
+            >
+              <ul
+                class="lg:flex lg:flex-row lg:items-center justify-evenly lg:w-full lg:text-lg lg:top-[2px] lg:absolute dark:text-slate-100"
+              >
+                <li>
+                  <a href="#home" class="hover:text-emerald-800 my-4 block"
+                    >HOME</a
+                  >
+                </li>
+                <li>
+                  <a href="#about-me" class="hover:text-emerald-800 my-4 block"
+                    >ABOUT ME</a
+                  >
+                </li>
+                <li>
+                  <a href="#skills" class="hover:text-emerald-800 my-4 block"
+                    >SKILLS</a
+                  >
+                </li>
+                <li>
+                  <a href="#projects" class="hover:text-emerald-800 my-4 block"
+                    >PROJECTS</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact" class="hover:text-emerald-800 my-4 block"
+                    >CONTACT</a
+                  >
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="dark-mode-toggle"
+                    class="hidden"
+                  />
+                  <label
+                    for="dark-mode-toggle"
+                    class="flex gap-2 items-center cursor-pointer"
+                  >
+                    <div
+                      class="toggle w-14 h-6 rounded-full bg-slate-300 flex items-center p-1"
+                    >
+                      <div
+                        class="toggle-circle w-5 h-5 rounded-full bg-black transition-all ease-in-out duration-300 flex justify-center items-center text-white"
+                      >
+                        <i class="fa-solid fa-sun"></i>
+                      </div>
+                    </div>
+                    <div id="info">
+                      <p id="light-dark-info" class="">Light Mode</p>
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero -->
+    <section id="home" class="w-full h-screen">
+      <div
+        class="container flex flex-col justify-center items-center sm:flex-row-reverse"
+      >
+        <div
+          class="hero flex justify-center items-center relative sm:w-1/2 sm:flex sm:flex-col sm:items-center"
+        >
+          <img src="./../src/img/hero-bg.png" alt="" width="" />
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute -z-10 lg:w-3/4"
+          >
+            <path
+              fill="#047857"
+              d="M52.1,-48.6C59.9,-44.3,53.2,-22.2,51.7,-1.5C50.2,19.2,53.8,38.3,46.1,44.6C38.3,50.9,19.2,44.3,4.5,39.8C-10.2,35.3,-20.5,33,-34.8,26.7C-49.1,20.5,-67.4,10.2,-71.2,-3.7C-74.9,-17.7,-64,-35.4,-49.7,-39.6C-35.4,-43.9,-17.7,-34.6,2.2,-36.8C22.2,-39.1,44.3,-52.8,52.1,-48.6Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+        <div
+          class="text container p-3 sm:w-1/2 sm:flex sm:flex-col sm:justify-start sm:items-center"
+        >
+          <div class="p-4 sm:p-8 lg:w-3/4">
+            <h2
+              class="text-slate-800 text-3xl font-bold lg:text-4xl dark:text-slate-100"
+            >
+              Hello there,
+            </h2>
+            <p class="text-sm text-slate-600 lg:text-lg dark:text-slate-300">
+              My name is
+              <span class="text-emerald-800 font-semibold dark:text-emerald-700"
+                >JULI ASTAWA</span
+              >
+            </p>
+            <p class="text-sm text-slate-600 -mt-1 dark:text-slate-300">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio, magni modi. Eveniet, quaerat. A aut laboriosam quasi
+              fugiat iusto accusantium!
+            </p>
+            <p class="text-md text-slate-800 mt-1 dark:text-slate-200">
+              nice to meet you!
+            </p>
+            <div class="sosmed flex gap-2 my-2">
+              <div
+                class="w-6 h-6 rounded-full border border-black flex items-center justify-center group hover:border-emerald-800 dark:text-slate-300 dark:border-slate-300"
+              >
+                <a href="#">
+                  <i
+                    class="fa-brands fa-twitter group-hover:text-emerald-800"
+                  ></i>
+                </a>
+              </div>
+              <div
+                class="w-6 h-6 rounded-full border border-black flex items-center justify-center group hover:border-emerald-800 dark:text-slate-300 dark:border-slate-300"
+              >
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-instagram group-hover:text-emerald-800"
+                  ></i
+                ></a>
+              </div>
+              <div
+                class="w-6 h-6 rounded-full border border-black flex items-center justify-center group hover:border-emerald-800 dark:text-slate-300 dark:border-slate-300"
+              >
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-telegram group-hover:text-emerald-800"
+                  ></i
+                ></a>
+              </div>
+              <div
+                class="w-6 h-6 rounded-full border border-black flex items-center justify-center group hover:border-emerald-800 dark:text-slate-300 dark:border-slate-300"
+              >
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-facebook group-hover:text-emerald-800"
+                  ></i
+                ></a>
+              </div>
+              <div
+                class="w-6 h-6 rounded-full border border-black flex items-center justify-center group hover:border-emerald-800 dark:text-slate-300 dark:border-slate-300"
+              >
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-youtube group-hover:text-emerald-800"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <button
+              class="bg-emerald-800 rounded-lg text-white text-sm hover:bg-emerald-500 flex justify-center items-center p-1 mt-2 lg:p-2"
+            >
+              Contact me!
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <div id="about-me" class="container mt-24 bg-slate-100 dark:bg-slate-950">
+      <div class="h-2"></div>
+      <div class="title mt-8">
+        <div
+          class="my-8 w-3/4 h-12 bg-emerald-800 rounded-r-full flex justify-center items-center lg:w-1/2 lg:h-12 sm:w-1/2"
+        >
+          <h2 class="text-white font-bold lg:text-xl">ABOUT ME</h2>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center sm:px-16 pb-8">
+        <div class="p-2 lg:w-[70%]">
+          <p class="text-xl text-slate-700 lg:text-2xl dark:text-slate-300">
+            My Name is
+            <span class="font-semibold text-black dark:text-white"
+              >I Made Juli Astawa</span
+            >
+          </p>
+          <p class="-mt-[4px] lg:text-lg dark:text-slate-300">
+            I'm from
+            <span class="font-semibold text-black dark:text-white">Bali</span>
+          </p>
+          <p
+            class="text-sm text-slate-700 text-justify lg:text-base dark:text-slate-400"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+            aspernatur atque consequuntur nihil culpa, dolores accusamus, fugit,
+            nostrum ratione vero qui ipsam reprehenderit voluptatem iure.
+            Tenetur vel ullam eveniet molestiae.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- skills -->
+    <section id="skills" class="my-16">
+      <div class="container">
+        <div class="flex justify-end">
+          <div
+            class="my-8 w-3/4 h-12 bg-emerald-800 rounded-l-full flex justify-center items-center lg:w-1/2 lg:h-12 sm:w-1/2"
+          >
+            <h2 class="text-white font-bold lg:text-xl">SKILLS</h2>
+          </div>
+        </div>
+        <div
+          class="container w-full flex flex-col p-4 sm:px-24 md:flex-row md:flex-wrap md:justify-around md:p-4 lg:py-8 lg:px-16"
+        >
+          <!-- html -->
+          <div
+            class="flex flex-col justify-center items-center shadow-lg rounded-lg p-4 transition-all ease-in-out duration-500 hover:scale-105 my-8 md:w-[45%] lg:w-[30%] dark:bg-slate-800"
+          >
+            <div class="logo">
+              <i class="fa-brands fa-html5 text-7xl" style="color: #e34c26"></i>
+            </div>
+            <h2 class="text-xl font-bold dark:text-white">HTML</h2>
+            <p class="text-center text-sm text-slate-600 dark:text-slate-300">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+              itaque totam iusto eum placeat debitis accusantium iure minus sed
+              consequatur.
+            </p>
+            <a
+              href=""
+              class="mt-4 dark:text-white dark:hover:text-emerald-800 hover:text-emerald-800"
+              ><i class="fa-regular fa-paper-plane"></i> learn</a
+            >
+          </div>
+          <!-- css -->
+          <div
+            class="flex flex-col justify-center items-center shadow-lg rounded-lg p-4 transition-all ease-in-out duration-500 hover:scale-105 my-8 md:w-[45%] lg:w-[30%] dark:bg-slate-800"
+          >
+            <div class="logo">
+              <i
+                class="fa-brands fa-css3-alt text-7xl"
+                style="color: #264de4"
+              ></i>
+            </div>
+            <h2 class="text-xl font-bold dark:text-white">CSS</h2>
+            <p class="text-center text-sm text-slate-600 dark:text-slate-300">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+              itaque totam iusto eum placeat debitis accusantium iure minus sed
+              consequatur.
+            </p>
+            <a
+              href=""
+              class="mt-4 hover:text-emerald-800 dark:text-white dark:hover:text-emerald-800"
+              ><i class="fa-regular fa-paper-plane"></i> learn</a
+            >
+          </div>
+          <!-- javascrip -->
+          <div
+            class="flex flex-col justify-center items-center shadow-lg rounded-lg p-4 transition-all ease-in-out duration-500 hover:scale-105 my-8 md:w-[45%] lg:w-[30%] dark:bg-slate-800"
+          >
+            <div class="logo relative">
+              <i
+                class="fa-brands fa-square-js text-7xl"
+                style="color: #ffff00"
+              ></i>
+              <div
+                class="w-3/4 h-[60px] bg-black top-[6px] right-[1px] absolute rounded-lg -z-10"
+              ></div>
+            </div>
+            <h2 class="text-xl font-bold dark:text-white">JAVASCRIPT</h2>
+            <p class="text-center text-sm text-slate-600 dark:text-slate-300">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+              itaque totam iusto eum placeat debitis accusantium iure minus sed
+              consequatur.
+            </p>
+            <a
+              href=""
+              class="mt-4 hover:text-emerald-800 dark:text-white dark:hover:text-emerald-800"
+              ><i class="fa-regular fa-paper-plane"></i> learn</a
+            >
+          </div>
+          <!-- bootstrap -->
+          <div
+            class="flex flex-col justify-center items-center shadow-lg rounded-lg p-4 transition-all ease-in-outduration-500 hover:scale-105 my-8 md:w-[45%] lg:w-[30%] dark:bg-slate-800"
+          >
+            <div class="logo">
+              <i
+                class="fa-brands fa-bootstrap text-7xl"
+                style="color: #563d7c"
+              ></i>
+            </div>
+            <h2 class="text-xl font-bold dark:text-white">BOOTSTRAP</h2>
+            <p class="text-center text-sm text-slate-600 dark:text-slate-300">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+              itaque totam iusto eum placeat debitis accusantium iure minus sed
+              consequatur.
+            </p>
+            <a
+              href=""
+              class="mt-4 hover:text-emerald-800 dark:text-white dark:hover:text-emerald-800"
+              ><i class="fa-regular fa-paper-plane"></i> learn</a
+            >
+          </div>
+          <!-- tailwind -->
+          <div
+            class="flex flex-col justify-center items-center shadow-lg rounded-lg p-4 transition-all ease-in-out duration-500 hover:scale-105 my-8 md:w-[45%] lg:w-[30%] dark:bg-slate-800"
+          >
+            <div class="logo">
+              <img src="./../src/img/Tailwind_CSS_Logo.svg.png" width="90" />
+            </div>
+            <h2 class="text-xl font-bold dark:text-white">TAILWINDCSS</h2>
+            <p class="text-center text-sm text-slate-600 dark:text-slate-300">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+              itaque totam iusto eum placeat debitis accusantium iure minus sed
+              consequatur.
+            </p>
+            <a
+              href=""
+              class="mt-4 hover:text-emerald-800 dark:text-white dark:hover:text-emerald-800"
+              ><i class="fa-regular fa-paper-plane"></i> learn</a
+            >
+          </div>
+          <!-- react -->
+          <div
+            class="flex flex-col justify-center items-center shadow-lg rounded-lg p-4 transition-all ease-in-out duration-500 hover:scale-105 my-8 md:w-[45%] lg:w-[30%] dark:bg-slate-800"
+          >
+            <div class="logo">
+              <i class="fa-brands fa-react text-7xl" style="color: #61dbfb"></i>
+            </div>
+            <h2 class="text-xl font-bold dark:text-white">REACT JS</h2>
+            <p class="text-center text-sm text-slate-600 dark:text-slate-300">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+              itaque totam iusto eum placeat debitis accusantium iure minus sed
+              consequatur.
+            </p>
+            <a
+              href=""
+              class="mt-4 hover:text-emerald-800 dark:text-white dark:hover:text-emerald-800"
+              ><i class="fa-regular fa-paper-plane"></i> learn</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="my-16 bg-slate-100 dark:bg-slate-950">
+      <div class="container">
+        <div class="w-100 h-1"></div>
+        <h2 class="text-center font-bold text-xl text-emerald-800 my-8">
+          PROJECTS
+        </h2>
+        <div
+          class="flex flex-col lg:flex-row lg:justify-evenly lg:w-full lg:flex-wrap"
+        >
+          <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
+            <div class="img flex flex-col relative group">
+              <div
+                class="w-full rounded-sm transition-all ease-in-out duration-500 hover:scale-95 group overflow-hidden"
+              >
+                <div
+                  class="w-full h-full transition-all ease-in-out duration-500 group-hover:scale-110"
+                >
+                  <img
+                    src="../src/img/project (1).png"
+                    alt=""
+                    class="opacity-1"
+                  />
+                </div>
+                <div
+                  class="text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-end"
+                >
+                  <h2 class="sm:text-lg text-white">
+                    Personal Website Using HTML CSS and JAVASCRIPT
+                  </h2>
+                  <p class="sm:text-base text-[10px] text-slate-200">
+                    Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
+                    Nesciunt, neque? Omnis ipsa quam culpa rerum architecto
+                    maiores nihil ducimus quia!
+                  </p>
+                  <a href="" class="bg-white rounded-lg mt-2"
+                    ><i class="fa-regular fa-paper-plane"></i> Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
+            <div class="img flex flex-col relative group">
+              <div
+                class="w-full rounded-sm transition-all ease-in-out duration-500 hover:scale-95 group overflow-hidden"
+              >
+                <div
+                  class="w-full h-full transition-all ease-in-out duration-500 group-hover:scale-110"
+                >
+                  <img
+                    src="../src/img/project (2).png"
+                    alt=""
+                    class="opacity-1"
+                  />
+                </div>
+                <div
+                  class="text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-end"
+                >
+                  <h2 class="sm:text-lg text-white">A Simple Calculator</h2>
+                  <p class="sm:text-base text-[10px] text-slate-200">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nesciunt, neque? Omnis ipsa quam culpa rerum architecto
+                    maiores nihil ducimus quia!
+                  </p>
+                  <a href="" class="bg-white rounded-lg mt-2"
+                    ><i class="fa-regular fa-paper-plane"></i> Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
+            <div class="img flex flex-col relative group">
+              <div
+                class="w-full rounded-sm transition-all ease-in-out duration-500 hover:scale-95 group overflow-hidden"
+              >
+                <div
+                  class="w-full h-full transition-all ease-in-out duration-500 group-hover:scale-110"
+                >
+                  <img src="../src/img/project1.png" alt="" class="opacity-1" />
+                </div>
+                <div
+                  class="text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-end"
+                >
+                  <h2 class="sm:text-lg text-white">
+                    Personal Website Using TAILWINDCSS
+                  </h2>
+                  <p class="sm:text-base text-[10px] text-slate-200">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nesciunt, neque? Omnis ipsa quam culpa rerum architecto
+                    maiores nihil ducimus quia!
+                  </p>
+                  <a href="" class="bg-white rounded-lg mt-2"
+                    ><i class="fa-regular fa-paper-plane"></i> Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
+            <div class="img flex flex-col relative group">
+              <div
+                class="w-full rounded-sm transition-all ease-in-out duration-500 hover:scale-95 group overflow-hidden"
+              >
+                <div
+                  class="w-full h-full transition-all ease-in-out duration-500 group-hover:scale-110"
+                >
+                  <img
+                    src="../src/img/project (3).png"
+                    alt=""
+                    class="opacity-1"
+                  />
+                </div>
+                <div
+                  class="text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-end"
+                >
+                  <h2 class="sm:text-lg text-white">Gallery</h2>
+                  <p class="sm:text-base text-[10px] text-slate-200">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nesciunt, neque? Omnis ipsa quam culpa rerum architecto
+                    maiores nihil ducimus quia!
+                  </p>
+                  <a href="" class="bg-white rounded-lg mt-2"
+                    ><i class="fa-regular fa-paper-plane"></i> Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
+            <div class="img flex flex-col relative group">
+              <div
+                class="w-full rounded-sm transition-all ease-in-out duration-500 hover:scale-95 group overflow-hidden"
+              >
+                <div
+                  class="w-full h-full transition-all ease-in-out duration-500 group-hover:scale-110"
+                >
+                  <img
+                    src="../src/img/project (4).png"
+                    alt=""
+                    class="opacity-1"
+                  />
+                </div>
+                <div
+                  class="text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-end"
+                >
+                  <h2 class="sm:text-lg text-white">Tic Tac Toe</h2>
+                  <p class="sm:text-base text-[10px] text-slate-200">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nesciunt, neque? Omnis ipsa quam culpa rerum architecto
+                    maiores nihil ducimus quia!
+                  </p>
+                  <a href="" class="bg-white rounded-lg mt-2"
+                    ><i class="fa-regular fa-paper-plane"></i> Visit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="my-16">
+      <div class="container">
+        <h2 class="text-center text-emerald-800 font-bold text-xl">
+          CONTACT ME
+        </h2>
+        <div class="p-4">
+          <div
+            class="bg-slate-100 rounded-md p-4 sm:mx-auto sm:w-[80%] xl:w-[70%] dark:bg-slate-800"
+          >
+            <form
+              action=""
+              class="flex flex-col bg-slate-100 dark:bg-slate-800"
+            >
+              <label for="name" class="font-semibold dark:text-white"
+                >Name</label
+              >
+              <input
+                type="text"
+                name=""
+                id="name"
+                class="w-full h-8 p-2 mb-4 text-sm dark:text-white dark:bg-slate-700"
+              />
+              <label for="email" class="font-semibold dark:text-white"
+                >Email</label
+              >
+              <input
+                type="email"
+                name=""
+                id="email "
+                class="text-sm w-full h-8 p-2 mb-4 dark:text-white dark:bg-slate-700"
+              />
+              <label for="text" class="font-semibold dark:text-white"
+                >Text</label
+              >
+              <textarea
+                name=""
+                id="text"
+                cols="30"
+                rows="10"
+                class="p-2 text-sm dark:text-white dark:bg-slate-700"
+              ></textarea>
+              <button
+                class="w-full h-8 my-8 rounded-lg text-white bg-emerald-800 hover:bg-emerald-600"
+              >
+                SEND
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- copyright -->
+    <section class="mt-16 w-full dark:bg-black">
+      <div
+        class="container flex flex-col gap-8 p-8 lg:flex-row lg:justify-between lg:gap-0 xl:p-16"
+      >
+        <div class="about-me lg:w-[30%]">
+          <h2 class="text-black text-xl font-semibold dark:text-white">
+            About Me
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+            voluptate.
+          </p>
+        </div>
+        <div class="menu lg:w-[30%]">
+          <h2 class="text-black text-xl font-semibold dark:text-white">Menu</h2>
+          <ul class="dark:text-slate-400">
+            <li>
+              <a href="#" class="hover:text-emerald-800 block">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-emerald-800 block">About Me</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-emerald-800 block">Skills</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-emerald-800 block">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-emerald-800 block">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact lg:w-[30%]">
+          <h2 class="text-black text-xl font-semibold dark:text-white">
+            Contact
+          </h2>
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="hover:text-emerald-800 my-1 block dark:text-slate-400 dark:hover:text-emerald-800"
+                >juliasta702@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-[80%] h-[1px] bg-slate-500 mx-auto"></div>
+      <div class="">
+        <p class="p-8 text-center text-sm dark:text-slate-300">
+          <span class="text-slate-600">copyright by</span> juliasta
+        </p>
+      </div>
+    </section>
+
+    <!-- top arrow -->
+    <div
+      id="arrow-up"
+      class="fixed bottom-6 right-6 flex justify-center items-center w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16"
+    >
+      <a
+        href="#home"
+        class="w-full h-full bg-white rounded-full md:text-xl lg:text-xl flex justify-center items-center dark:bg-slate-700 dark:text-white"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
+    </div>
+
+    <!-- light dark mode -->
+    <div
+      class="dark-mode w-full h-screen animate-darkMode fixed top-0 z-50 hidden"
+    >
+      <div class="logo h-full w-full flex flex-col items-center justify-center">
+        <i class="animate-spinningMoon text-5xl fa-solid fa-moon"></i>
+        <p>Switching to dark mode...</p>
+      </div>
+    </div>
+    <div
+      class="light-mode w-full h-screen animate-lightMode fixed top-0 z-50 hidden"
+    >
+      <div class="logo h-full w-full flex flex-col items-center justify-center">
+        <i class="animate-spinningSun text-5xl fa-solid fa-sun"></i>
+        <p>Switching to light mode...</p>
+      </div>
+    </div>
+
+    <script>
+      // darkmode
+      const darkMode = document.querySelector(".dark-mode");
+      const lightMode = document.querySelector(".light-mode");
+      const darkModeToggle = document.querySelector("#dark-mode-toggle");
+      const lightDarkInfo = document.querySelector("#light-dark-info");
+      const toggleCircle = document.querySelector(".toggle-circle");
+      const html = document.querySelector("html");
+
+      darkModeToggle.addEventListener("click", () => {
+        if (darkModeToggle.checked) {
+          darkMode.classList.remove("hidden");
+          setTimeout(() => {
+            html.classList.add("dark");
+            darkMode.classList.add("hidden");
+            lightDarkInfo.innerHTML = `Dark Mode`;
+            toggleCircle.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+          }, 1500);
+        } else {
+          lightMode.classList.remove("hidden");
+          setTimeout(() => {
+            html.classList.remove("dark");
+            lightMode.classList.add("hidden");
+            lightDarkInfo.innerHTML = `light Mode`;
+            toggleCircle.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+          }, 1500);
+        }
+      });
+
+      // fixed navbar
+      window.onscroll = () => {
+        const header = document.querySelector("header");
+        const arrowUp = document.querySelector("#arrow-up");
+        const fixNav = header.offsetTop;
+
+        window.pageYOffset > fixNav
+          ? header.classList.add("navbar-fixed")
+          : header.classList.remove("navbar-fixed");
+
+        window.pageYOffset > fixNav
+          ? arrowUp.classList.remove("hidden")
+          : arrowUp.classList.add("hidden");
+      };
+
+      // hamburger menu
+      const hamburger = document.querySelector("#hamburger-toggle");
+      const navMenu = document.querySelector("#nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("hamburger-active");
+        navMenu.classList.toggle("scale-0");
+      });
+    </script>
+  </body>
+</html>
